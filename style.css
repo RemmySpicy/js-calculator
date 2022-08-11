@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    background: linear-gradient(236deg, #74ebd5 50%, #acb6e5 50%);
+    color: white;
+    height: 100vh;
+    /* font-weight: 300; */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 322px;
+    background-color: darkgray;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    overflow: hidden; /* to allow the container border radius to show all around */
+}
+
+.display {
+    background-color: #222222;
+    color: #eee;
+    /* padding: 0.5em 0.75em; */
+    text-align: right;
+    height: 146px;
+}
+
+.output  {
+    font-size: 45px;
+    padding: 15px 20px;
+    transition: all 100ms ease-in-out;
+}
+
+.result {
+    font-size: 30px;
+    padding: 15px 20px;
+    transition: all 100ms ease-in-out;
+}
+
+@keyframes big {
+    /* 0% {
+        font-size: 25px;
+    } */
+
+    100% {
+        font-size: 45px;
+    }
+}
+
+@keyframes small {
+    /* 0% {
+        font-size: 35px;
+    } */
+
+    100% {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+.keys {
+    background-color: rgb(89, 89, 89);
+    display: grid;
+    gap: 1.5px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    background-color: #eee;
+    border: 0;
+    /* border: 1px solid gray; */
+    /* background-color: transparent; */
+    font-size: 1.7rem;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 100ms ease-out;
+}
+
+button:hover {
+    font-weight: 600;
+}
+
+button:active {
+    background-color: rgb(203, 203, 203);
+    box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.key-operator {
+    background-color: #ddd;
+}
+
+
+.equal {
+    background-image: linear-gradient(to bottom, #d4fe6a, #79f520);
+    /* grid-column: -2; */
+    /* grid-row: 5 / span 2; */
+}
+
+
+
+
+
+/* .keys > * {
+    background-color: #fff;
+    padding: 0.5em 1.25em;
+    position: relative;
+    text-align: center;
+  } */
+
+
+/* .keys > *:active::before,
+.keys > .is-depressed::before {
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  content: "yay";
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+} */
+
+
+
+
+
+.clear {
+    /* background-color: rgb(245, 81, 81); */
+    background-color: #ddd;
+    color: red;
+}
+
+.clear:hover {
+    font-weight: inherit;
+    background-color: rgb(255, 54, 54);
+    color: black;
+}
+
+.clear:active {
+    background-color: rgb(255, 0, 0);
+}
+
+
+
