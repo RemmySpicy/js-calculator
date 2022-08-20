@@ -48,10 +48,54 @@ buttons.forEach(button => {
 
 
 
+// Odin project systems
 
-// function calculate() {
-//     console.log('yay')
-// }
+// create functions that add, subtract, multiply and divide
+
+// add function
+function add() {
+    let result = 0;
+    for (let item of arguments) {
+        result += item;
+    }
+    return result;
+}
+
+function subtract() {
+    let result = arguments[0];
+    for (let i = 1; i < arguments.length; i++) {
+        result -= arguments[i];
+    }
+    return result;
+}
+
+function multiply() {
+    let result = arguments[0]
+    for (let i = 1; i < arguments.length; i++) {
+        result *= arguments[i];
+    }
+    return result;
+}
+
+
+function divide() {
+    let result = arguments[0]
+    for (let i = 1; i < arguments.length; i++) {
+        result /= arguments[i];
+    }
+    return result;
+}
+
+
+
+console.log(divide(5, 2 ))
+
+function operate(...args) {
+
+    // args.split(', ')
+}
+
+// console.log(operate('23', '+', '1', '+', '13', '+', '7'))
 
 
 
